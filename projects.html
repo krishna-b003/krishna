@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <style>
+       
+        body {
+            background: #0b0f19;
+            color: #d3d3d3;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+       
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background: #111726;
+            padding: 18px 0;
+            border-bottom: 2px solid rgba(120, 170, 255, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: navGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes navGlow {
+            from { box-shadow: 0 0 5px #4da3ff; }
+            to   { box-shadow: 0 0 20px #4da3ff; }
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #e2e2e2;
+            font-size: 22px;
+            padding: 8px 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #4da3ff;
+            text-shadow: 0 0 10px #4da3ff;
+        }
+
+        
+        h1 {
+            margin-top: 40px;
+            font-size: 42px;
+            font-weight: 700;
+            color: #dcdcdc;
+        }
+
+        
+        .animated-text {
+            width: 70%;
+            margin: 25px auto;
+            font-size: 22px;
+            color: #c7c7c7;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #4da3ff;
+            animation: typing 4s steps(60) forwards, blink 0.75s step-end infinite;
+        }
+
+        .animated-text2 {
+            width: 70%;
+            margin: 40px auto 20px;
+            font-size: 22px;
+            color: #c7c7c7;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #4da3ff;
+            animation: typing2 4s steps(60) forwards 1s, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to   { width: 100%; }
+        }
+
+        @keyframes typing2 {
+            from { width: 0; }
+            to   { width: 100%; }
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+
+       
+        img {
+            width: 150px;
+            height: auto;
+            margin-top: 15px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 18px #4da3ff;
+        }
+
+        
+        .small-logo {
+            width: 120px;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="education.html">Education/Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="abouts.html">About</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+
+    
+    <h1>Projects</h1>
+
+   
+    <p class="animated-text">
+        • Basic chatbot built using Python that simulates simple human-like conversations.
+    </p>
+
+    <img src="https://images.seeklogo.com/logo-png/20/2/python-logo-png_seeklogo-207405.png" alt="Python Logo">
+
+    
+    <p class="animated-text2">
+        • (Mini Project) Portfolio website built using HTML and CSS.
+    </p>
+
+    <img class="small-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="HTML Logo">
+
+    <img class="small-logo" src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo-2011.png" alt="CSS Logo">
+
+</body>
+
+</html>
