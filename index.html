@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <style>
+        
+        body {
+            background: #0b0f19; 
+            color: #d3d3d3;
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        nav.header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+            background: #111726;
+            border-bottom: 2px solid rgba(120, 170, 255, 0.2);
+            animation: navGlow 3s ease-in-out infinite alternate;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        @keyframes navGlow {
+            from { box-shadow: 0 0 8px #4da3ff; }
+            to   { box-shadow: 0 0 22px #4da3ff; }
+        }
+
+        nav.header a {
+            text-decoration: none;
+            color: #e2e2e2;
+            margin: 0 15px;
+            font-size: 20px;
+            transition: 0.3s ease;
+        }
+
+        nav.header a:hover {
+            color: #4da3ff;
+            text-shadow: 0 0 10px #4da3ff;
+        }
+
+        
+        .top {
+            font-size: 45px;
+            color: #dcdcdc;
+            letter-spacing: 3px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        
+        .kop {
+            font-size: 22px;
+            margin-top: 20px;
+            width: 80%;
+            line-height: 1.5;
+            animation: fadeSlide 2.5s ease-out;
+        }
+
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateX(-20px); }
+            to   { opacity: 1; transform: translateX(0); }
+        }
+
+        
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            padding: 60px;
+        }
+
+       
+        .int {
+            margin-top: 40px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .heading {
+            font-size: 35px;
+            margin-bottom: 10px;
+            color: #4da3ff;
+            text-shadow: 0 0 10px #4da3ff;
+        }
+
+        .dev p {
+            width: 60%;
+            margin: auto;
+            font-size: 20px;
+            line-height: 1.7;
+            color: #c8c8c8;
+        }
+
+        
+        .qoutes {
+            margin-top: 50px;
+            padding: 30px;
+            text-align: center;
+        }
+
+       
+        .mq {
+            font-family: "Georgia", "Times New Roman", serif;
+            font-style: italic;
+            font-size: 26px;
+            width: 70%;
+            margin: auto;
+            color: #d0d0d0;
+            animation: quoteGlow 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes quoteGlow {
+            from { text-shadow: 0 0 8px #4da3ff; }
+            to   { text-shadow: 0 0 20px #4da3ff; }
+        }
+
+        .say {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #4da3ff;
+        }
+
+       
+        footer {
+            margin-top: 80px;
+            padding: 30px;
+            background: #111726;
+            text-align: center;
+            border-top: 2px solid rgba(120,170,255,0.2);
+        }
+
+        footer h3 {
+            font-size: 26px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            font-size: 15px;
+            color: #bbbbbb;
+        }
+
+        .socialicons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .social {
+            width: 45px;
+            transition: 0.3s ease;
+        }
+
+        .social:hover {
+            transform: scale(1.15);
+            filter: drop-shadow(0 0 10px #4da3ff);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="header">
+            <div class="name">
+                <h1 class="top welcome">WELCOME</h1>
+            </div>
+
+            <div class="hitems">
+                <a href="index.html">Home</a>
+                <a href="education.html">Education/Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="abouts.html">About</a>
+                <a href="contacts.html">Contacts</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro">
+            <div class="name">
+                <p class="kop">
+                    It always seems impossible until it’s done. <br> ~ Nelson Mandela
+                </p>
+            </div>
+        </div>
+
+        <div class="int">
+            <div class="heading">Introduction</div>
+
+            <div class="dev">
+                <p>
+                    I am a web developer with a strong interest in creating clean and efficient websites.<br>
+                    I enjoy working with HTML, CSS, and JavaScript to bring creative ideas to life.
+                </p>
+            </div>
+        </div>
+
+        
+        <div class="qoutes">
+            <div class="q">
+                <p class="mq">
+                    Destiny. Fate. Dreams.
+                    These unstoppable ideals are held deep in the heart of man.
+                    As long as there are people who seek freedom in this life,
+                    these things shall not vanish from the Earth.
+                </p>
+                <p class="say">~ Gol D. Roger</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Krishna Bhati</h3>
+            <p>© 2025 Delhi Technological University. All rights reserved.<br>Privacy Policy | Terms & Conditions</p>
+
+            <div class="socialicons">
+                <a href="https://www.linkedin.com/in/krishna-bhati-3b781537b/">
+                    <img class="social" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/500px-LinkedIn_logo_initials.png">
+                </a>
+
+                <a href="https://github.com/krsna-b">
+                    <img class="social" src="https://images.seeklogo.com/logo-png/50/1/github-icon-logo-png_seeklogo-503247.png">
+                </a>
+
+                <a href="https://www.instagram.com/_krsna_o/">
+                    <img class="social" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
